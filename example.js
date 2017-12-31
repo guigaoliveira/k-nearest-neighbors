@@ -7,11 +7,11 @@ console.log(
     [
       {
         data: [2, 0],
-        type: "CLASS1"
+        group: "CLASS1"
       },
       {
         data: [1, 0],
-        type: "CLASS2"
+        group: "CLASS2"
       }
     ]
   )

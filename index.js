@@ -25,7 +25,7 @@ const classify = (unknown, dataset, options = defaultOptions(dataset)) => {
     distances[options.distance](data, unknown.data)
   );
   const arrKItens = getKitens(datasetSorted, makeOdd(options.k));
-  const countClass = countBy(arrKItens, ({ type }) => type);
+  const countClass = countBy(arrKItens, ({ group }) => group);
   return maxBy(countClass, item => item[1])[0];
 };
 
