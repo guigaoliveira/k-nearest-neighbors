@@ -4,7 +4,7 @@ This is a simple implementation of the [K Nearest Neighbors](https://en.wikipedi
 The algorithm allows you to classify things from numeric data with "characteristics" that define groups. Example: Given the weight and height a person can be classified into groups as above or below ideal weight.
 
 ## API
-#### **classify(unknown, dataset, options)**
+### **classify(unknown, dataset, options)**
 This is the function used to classify something unknown from a data set. The first parameter is the you want to discover the group, the second parameter is the data set, the third are the options. 
 
 Example:
@@ -32,21 +32,21 @@ console.log(
   )
 );
 ```
-### Params
+Description of function parameters: 
 
-##### unknown
+#### unknown
 Type: Object. 
 Attributes:
 * **data**
 Array of data representing the "characteristics" of a group. Type: Array.
-##### dataset 
+#### dataset 
 Type: Object. 
 Attributes:
 * **data**
 Array of data representing the "characteristics" of a group. Type: Array.
 * **group** 
 The group name. Type: String.
-##### options
+#### options
 Type: Object. 
 Attributes:
 * **k**
