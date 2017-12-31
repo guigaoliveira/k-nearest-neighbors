@@ -1,12 +1,13 @@
 # K Nearest Neighbors
 
 This is a simple implementation of the [K Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) (KNN) algorithm in Javascript.
-The algorithm allows you to classify things from numeric data with "characteristics" that define classes / types. Example: Given the weight and height a person can be classified into groups as above or below ideal weight.
+The algorithm allows you to classify things from numeric data with "characteristics" that define groups. Example: Given the weight and height a person can be classified into groups as above or below ideal weight.
 
 ## API
 #### **classify(unknown, dataset, options)**
-This is the function used to classify something unknown from a data set. The first parameter is the you want to discover the class, the second parameter is the data set, the third are the options. 
-Example of how to use:
+This is the function used to classify something unknown from a data set. The first parameter is the you want to discover the group, the second parameter is the data set, the third are the options. 
+
+Example:
 ```javascript
 const { classify } = require(".");
 console.log(
@@ -17,11 +18,11 @@ console.log(
     [
       {
         data: [2, 0],
-        type: "CLASS1"
+        group: "CLASS1"
       },
       {
         data: [1, 0],
-        type: "CLASS2"
+        group: "CLASS2"
       }
     ],
     {
@@ -37,14 +38,14 @@ console.log(
 Type: Object. 
 Attributes:
 * **data**
-Array of data representing the "characteristics" of a class / type. Type: Array.
+Array of data representing the "characteristics" of a group. Type: Array.
 ##### dataset 
 Type: Object. 
 Attributes:
 * **data**
-Array of data representing the "characteristics" of a class / type. Type: Array.
-* **type** 
-The name of the class / type. Type: String.
+Array of data representing the "characteristics" of a group. Type: Array.
+* **group** 
+The group name. Type: String.
 ##### options
 Type: Object. 
 Attributes:
