@@ -1,0 +1,22 @@
+{
+  "name": "k-nearest-neighbors",
+  "version": "1.0.0",
+  "description": "Implementation of the algorithm of k nearest neighbors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guigaoliveira/k-nearest-neighbors.git"
+  },
+  "keywords": [
+    "knn"
+  ],
+  "author": "Guilherme Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guigaoliveira/k-nearest-neighbors/issues"
+  },
+  "homepage": "https://github.com/guigaoliveira/k-nearest-neighbors#readme"
+}
