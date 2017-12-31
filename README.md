@@ -5,7 +5,7 @@ The algorithm allows you to classify things from numeric data with "characterist
 
 ## API
 ### **classify(unknown, dataset, options)**
-This is the function used to classify something unknown from a data set. The first parameter is the you want to discover the group, the second parameter is the data set, the third are the options. 
+This is the function used to classify something unknown from a data set. The first parameter is the you want to discover the group, the second parameter is the data set with the groups, the third are the options. 
 
 Example:
 ```javascript
