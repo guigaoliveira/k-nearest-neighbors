@@ -20,7 +20,7 @@ const defaultOptions = dataset => ({
   k: Math.round(dataset.length ** 0.5),
   distance: "euclidian"
 });
-const knnClassifer = (unknown, dataset, options = defaultOptions(dataset)) => {
+const classify = (unknown, dataset, options = defaultOptions(dataset)) => {
   const datasetSorted = sortBy(dataset, ({ data }) =>
     distances[options.distance](data, unknown.data)
   );
@@ -30,5 +30,5 @@ const knnClassifer = (unknown, dataset, options = defaultOptions(dataset)) => {
 };
 
 module.exports = {
-  knnClassifer
+  classify
 };
