@@ -1,6 +1,6 @@
-const { knnClassifer } = require(".");
+const { classify } = require(".");
 console.log(
-  knnClassifer(
+  classify(
     {
       data: [0, 1, 0]
     },
