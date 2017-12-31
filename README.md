@@ -18,11 +18,11 @@ console.log(
     [
       {
         data: [2, 0],
-        group: "CLASS1"
+        group: "group1"
       },
       {
         data: [1, 0],
-        group: "CLASS2"
+        group: "group2"
       }
     ],
     {
