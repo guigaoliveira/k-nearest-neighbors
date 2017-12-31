@@ -1,4 +1,4 @@
-const euclidian = (arr1, arr2) =>
+const euclidean = (arr1, arr2) =>
   Math.hypot(...arr1.map((val, index) => val - arr2[index]));
 const sortBy = (dataset, f) => dataset.sort((a, b) => f(a) - f(b));
 const identity = val => val;
@@ -14,11 +14,11 @@ const maxBy = (arr, f = identity) => {
   return arr[transform.indexOf(Math.max(...transform))];
 };
 const distances = {
-  euclidian
+  euclidean
 };
 const defaultOptions = dataset => ({
   k: Math.round(dataset.length ** 0.5),
-  distance: "euclidian"
+  distance: "euclidean"
 });
 const classify = (unknown, dataset, options = defaultOptions(dataset)) => {
   const datasetSorted = sortBy(dataset, ({ data }) =>
